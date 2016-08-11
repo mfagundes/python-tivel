@@ -269,7 +269,7 @@ class TivelGateway(object):
     def process_payment(self, sale, total, **kwargs):
         """Processar pagamentos pela Integração Checkout Cielo
         """
-        tivel_service = "/{service}}".format(service=settings.TIVEL_SERVICES['POST_VENDA'])
+        tivel_service = "/{service}".format(service=settings.TIVEL_SERVICES['POST_VENDA'])
 
         params = {
             'total': total,
